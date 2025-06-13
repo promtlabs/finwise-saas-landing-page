@@ -8,11 +8,13 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
+import HowItWorks from "@/components/HowItWorks";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
+      <HowItWorks />
       <Logos />
       <Container>
         <Benefits />

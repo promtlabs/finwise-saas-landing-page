@@ -21,23 +21,32 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="text-center">
-                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
-                <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
-                <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <AppStoreButton dark />
-                    <PlayStoreButton dark />
+                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">
+                  GetHooked: Instantly Generate Viral Video Hooks with AI
+                </h1>
+                <p className="mt-4 text-foreground max-w-lg mx-auto">
+                  AI-powered video analysis that transcribes your content and generates viral hooks tailored for YouTube Shorts, TikTok, and Instagram Reels. Join the waitlist to get early access!
+                </p>
+                <form className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md mx-auto">
+                  <input
+                    type="email"
+                    placeholder="Enter your email to join the waitlist"
+                    className="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-green-400 text-white font-semibold shadow-md hover:from-blue-600 hover:to-green-500 transition-colors w-full sm:w-auto"
+                  >
+                    Join Waitlist
+                  </button>
+                </form>
+                <div className="relative mt-12 md:mt-16 mx-auto z-10">
+                  {/* Placeholder for app screenshot */}
+                  <div className="w-[384px] h-[220px] bg-gray-800 rounded-xl flex items-center justify-center text-gray-400 text-lg border-2 border-gray-700">
+                    App Screenshot Here
+                  </div>
                 </div>
-                <Image
-                    src={heroDetails.centerImageSrc}
-                    width={384}
-                    height={340}
-                    quality={100}
-                    sizes="(max-width: 768px) 100vw, 384px"
-                    priority={true}
-                    unoptimized={true}
-                    alt="app mockup"
-                    className='relative mt-12 md:mt-16 mx-auto z-10'
-                />
             </div>
         </section>
     );
