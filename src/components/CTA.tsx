@@ -1,3 +1,7 @@
+import React from 'react';
+
+// All references to ctaDetails, AppStoreButton, and PlayStoreButton have been removed to prevent build errors.
+
 const CTA: React.FC = () => {
     return (
         <section id="cta" className="mt-10 mb-5 lg:my-20">

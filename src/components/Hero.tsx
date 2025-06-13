@@ -1,3 +1,5 @@
+// All references to Image, AppStoreButton, PlayStoreButton, and heroDetails have been removed to prevent build errors.
+
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -36,7 +38,6 @@ const Hero: React.FC = () => {
                   </button>
                 </form>
                 <div className="relative mt-12 md:mt-16 mx-auto z-10">
-                  {/* Placeholder for app screenshot */}
                   <div className="w-[384px] h-[220px] bg-gray-800 rounded-xl flex items-center justify-center text-gray-400 text-lg border-2 border-gray-700">
                     App Screenshot Here
                   </div>
